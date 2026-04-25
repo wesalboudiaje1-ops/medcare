@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MedCare – Healthcare Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ════════ HEADER ════════ -->
+<header>
+  <div class="header-inner">
+    <a class="logo" onclick="navigate('home')">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></svg>
+      </div>
+      <span class="logo-text">MedCare</span>
+    </a>
+    <nav>
+      <a onclick="navigate('home')" id="nav-home" class="active">Home</a>
+      <a onclick="navigate('about')" id="nav-about">About</a>
+      <a onclick="navigate('services')" id="nav-services">Services</a>
+      <a onclick="navigate('doctors')" id="nav-doctors">Doctors</a>
+      <a onclick="navigate('contact')" id="nav-contact">Contact</a>
+    </nav>
+    <button class="btn btn-sm" onclick="navigate('appointment')">📅 Appointment</button>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════
+     HOME PAGE
+══════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- Hero -->
+  <div style="max-width:1200px;margin:0 auto;padding:28px 30px 0;">
+    <div class="hero">
+      <div class="hero-left">
+        <div class="badge">🏥 Medical Excellence Since 2010</div>
+        <h1>Advanced<br>Healthcare<br>Solutions</h1>
+        <p>We provide world-class medical care with cutting-edge technology and compassionate professionals dedicated to your wellbeing.</p>
+        <div class="hero-btns">
+          <button class="btn" onclick="navigate('appointment')">📅 Book Appointment</button>
+          <button class="btn btn-outline" onclick="navigate('doctors')">Find Doctors</button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
+          Trusted Care
+        </div>
+        <img src="https://cdn-icons-png.flaticon.com/512/8815/8815112.png" alt="Doctors">
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Cards -->
+  <div class="quick-grid">
+    <div class="qcard hl">
+      <div class="qcard-icon">🕐</div>
+      <h4>Opening Hours</h4>
+      <p class="qcard-times">Mon – Fri</p>
+      <p>8:00am – 10:00pm</p>
+      <p class="qcard-times" style="margin-top:6px">Sat – Sun</p>
+      <p>9:00am – 6:00pm</p>
+    </div>
+    <div class="qcard">
+      <div class="qcard-icon">📅</div>
+      <h4>Appointment</h4>
+      <p>Book your visit online quickly and easily, 24/7 availability.</p>
+      <button class="qcard-btn" onclick="navigate('appointment')">Request</button>
+    </div>
+    <div class="qcard">
+      <div class="qcard-icon">👨‍⚕️</div>
+      <h4>Find Doctors</h4>
+      <p>Browse our team of 50+ certified medical specialists.</p>
+      <button class="qcard-btn" onclick="navigate('doctors')">Doctors</button>
+    </div>
+    <div class="qcard">
+      <div class="qcard-icon">📍</div>
+      <h4>Find Locations</h4>
+      <p>5 clinics conveniently located across the city.</p>
+      <button class="qcard-btn" onclick="navigate('contact')">Locations</button>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-strip">
+    <div class="stats-inner">
+      <div class="stat"><div class="stat-num">15K+</div><div class="stat-label">Happy Patients</div></div>
+      <div class="stat"><div class="stat-num">50+</div><div class="stat-label">Expert Doctors</div></div>
+      <div class="stat"><div class="stat-num">20+</div><div class="stat-label">Specialties</div></div>
+      <div class="stat"><div class="stat-num">98%</div><div class="stat-label">Success Rate</div></div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="wrap"><div class="sec">
+    <p class="sec-label">Service</p>
+    <h2 class="sec-title">Our Medical Services</h2>
+    <div class="service-wrap" style="margin-top:36px">
+      <div class="service-visual">
+        <div class="svc-circle"></div>
+        <img src="https://cdn-icons-png.flaticon.com/512/8815/8815112.png" alt="Doctor">
+        <div class="stags">
+          <div class="stag"><span class="dot" style="background:#00b4d8"></span> Eye Care</div>
+          <div class="stag"><span class="dot" style="background:#ef476f"></span> Cardiology</div>
+          <div class="stag"><span class="dot" style="background:#06d6a0"></span> Medicine</div>
+          <div class="stag"><span class="dot" style="background:#ffd166"></span> Dental</div>
+        </div>
+      </div>
+      <div class="service-info">
+        <div class="badge">⭐ Most Popular</div>
+        <h3>Dental Care Service</h3>
+        <p>Our dental department offers comprehensive oral health care using the latest technologies. From routine cleanings to complex procedures, our experienced dentists ensure your smile stays bright and healthy.</p>
+        <button class="btn btn-sm" onclick="navigate('services')">Learn More →</button>
+      </div>
+    </div>
+  </div></div>
+
+  <!-- Specialty -->
+  <div class="wrap" style="padding-bottom:60px">
+    <p class="sec-label text-center">Features</p>
+    <h2 class="sec-title text-center" style="margin-bottom:30px">Our Speciality</h2>
+    <div class="special-box">
+      <div class="special-text">
+        <h3>Online Appointment<br>Booking</h3>
+        <p>Schedule your visit from anywhere, anytime. Our smart booking system connects you with the right specialist instantly — no waiting, no hassle.</p>
+        <button class="btn-white" onclick="navigate('appointment')">Book Now →</button>
+      </div>
+      <div class="special-img">
+        <img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png" alt="Stethoscope">
+      </div>
+    </div>
+  </div>
+
+  <!-- Schedule -->
+  <div class="wrap" style="padding-bottom:60px">
+    <div class="schedule-wrap">
+      <div class="schedule-info">
+        <p class="sec-label">Time Table</p>
+        <h2>Appointment<br>Schedules</h2>
+        <p>View real-time availability and book your appointment with our specialists. Our smart scheduling system ensures minimum wait times and maximum care quality.</p>
+        <button class="btn btn-sm" onclick="navigate('appointment')">View Schedules</button>
+      </div>
+      <div class="schedule-img">
+        <img src="https://cdn-icons-png.flaticon.com/512/2693/2693507.png" alt="Calendar">
+      </div>
+    </div>
+  </div>
+
+  <!-- Team -->
+  <div class="wrap" style="padding-bottom:80px;text-align:center">
+    <p class="sec-label">Team</p>
+    <h2 class="sec-title">Our Doctors</h2>
+    <div class="team-grid">
+      <div class="doc-card" onclick="navigate('doctors')">
+        <div class="doc-photo c1"><img src="https://cdn-icons-png.flaticon.com/512/4128/4128349.png"></div>
+        <div class="doc-info"><div class="doc-name">Dr. Mamman Bo</div><div class="doc-role">Cardiologist</div><div class="doc-stars">★★★★★</div></div>
+      </div>
+      <div class="doc-card" onclick="navigate('doctors')">
+        <div class="doc-photo c2"><img src="https://cdn-icons-png.flaticon.com/512/4128/4128176.png"></div>
+        <div class="doc-info"><div class="doc-name">Dr. Reda Slana</div><div class="doc-role">Neurologist</div><div class="doc-stars">★★★★★</div></div>
+      </div>
+      <div class="doc-card" onclick="navigate('doctors')">
+        <div class="doc-photo c3"><img src="https://cdn-icons-png.flaticon.com/512/4128/4128349.png"></div>
+        <div class="doc-info"><div class="doc-name">Dr. Yaroslav Hawa</div><div class="doc-role">Dentist</div><div class="doc-stars">★★★★☆</div></div>
+      </div>
+    </div>
+    <button class="btn" style="margin-top:36px" onclick="navigate('doctors')">See All Doctors</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     ABOUT PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-about">
+  <div class="wrap"><div class="sec">
+
+    <div class="about-hero">
+      <div class="about-hero-text">
+        <div class="badge" style="background:rgba(255,255,255,.25);color:white;">🏥 Est. 2010</div>
+        <h1>About MedCare</h1>
+        <p>We are a team of passionate healthcare professionals committed to providing accessible, high-quality medical care to every patient who walks through our doors.</p>
+        <button class="btn-white" onclick="navigate('contact')">Get In Touch</button>
+      </div>
+      <img src="https://cdn-icons-png.flaticon.com/512/8815/8815112.png" alt="Doctors">
+    </div>
+
+    <div class="values-grid" style="margin-top:50px">
+      <div class="value-card">
+        <div class="value-icon" style="background:#e0f7fa">❤️</div>
+        <h3>Patient-First Care</h3>
+        <p>Every decision we make is centered around the patient's comfort, safety, and recovery. Your wellbeing is our highest priority.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon" style="background:#e8f5e9">🔬</div>
+        <h3>Medical Innovation</h3>
+        <p>We invest in cutting-edge technology and research to stay at the forefront of modern medicine and deliver the best outcomes.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon" style="background:#fff3e0">🤝</div>
+        <h3>Trusted Community</h3>
+        <p>Serving our community for over 14 years, we have built lasting relationships with thousands of families across the region.</p>
+      </div>
+    </div>
+
+    <div class="about-mission" style="margin-top:50px">
+      <div class="mission-text">
+        <p class="sec-label">Our Mission</p>
+        <h2>Healing with Excellence & Compassion</h2>
+        <p>MedCare was founded with a simple but powerful vision: to make world-class healthcare available to everyone. We believe that quality medical care is not a privilege — it's a right.</p>
+        <p>Our team of 50+ certified specialists works around the clock to ensure every patient receives personalized, evidence-based treatment in a warm, supportive environment.</p>
+        <div class="timeline">
+          <div class="tl-item"><div class="tl-dot"></div><p><strong>2010</strong> — Founded with 5 doctors and 1 clinic</p></div>
+          <div class="tl-item"><div class="tl-dot"></div><p><strong>2015</strong> — Expanded to 3 locations, launched online portal</p></div>
+          <div class="tl-item"><div class="tl-dot"></div><p><strong>2020</strong> — Introduced telemedicine services</p></div>
+          <div class="tl-item"><div class="tl-dot"></div><p><strong>2024</strong> — AI-assisted diagnostics rolled out across all branches</p></div>
+        </div>
+      </div>
+      <div class="mission-img">
+        <img src="https://cdn-icons-png.flaticon.com/512/2966/2966487.png" alt="Mission">
+      </div>
+    </div>
+
+  </div></div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     SERVICES PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-services">
+  <div class="wrap"><div class="sec">
+
+    <div class="services-hero">
+      <p class="sec-label">What We Offer</p>
+      <h1>Our Medical Services</h1>
+      <p>Comprehensive care across 20+ specialties — all under one roof, delivered by certified experts using cutting-edge technology.</p>
+      <button class="btn" onclick="navigate('appointment')">Book a Consultation</button>
+    </div>
+
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-card-icon" style="background:#e0f7fa">🦷</div>
+        <h3>Dental Care</h3>
+        <p>Complete dental health services including cleanings, fillings, orthodontics, implants and cosmetic dentistry with the latest technology.</p>
+        <div><span class="svc-tag">Implants</span><span class="svc-tag">Orthodontics</span><span class="svc-tag">Whitening</span></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-card-icon" style="background:#fce4ec">❤️</div>
+        <h3>Cardiology</h3>
+        <p>Advanced heart care with ECG, echocardiography, stress testing, cardiac catheterization and preventive cardiology programs.</p>
+        <div><span class="svc-tag">ECG</span><span class="svc-tag">Heart Surgery</span><span class="svc-tag">Prevention</span></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-card-icon" style="background:#e8f5e9">👁️</div>
+        <h3>Eye Care</h3>
+        <p>Comprehensive eye exams, laser vision correction (LASIK), cataract surgery, glaucoma treatment and vision rehabilitation.</p>
+        <div><span class="svc-tag">LASIK</span><span class="svc-tag">Cataract</span><span class="svc-tag">Glaucoma</span></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-card-icon" style="background:#fff3e0">🧠</div>
+        <h3>Neurology</h3>
+        <p>Expert diagnosis and treatment of neurological disorders including migraines, epilepsy, stroke, Parkinson's and multiple sclerosis.</p>
+        <div><span class="svc-tag">Stroke</span><span class="svc-tag">Epilepsy</span><span class="svc-tag">Migraine</span></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-card-icon" style="background:#ede7f6">🦴</div>
+        <h3>Orthopedics</h3>
+        <p>Joint replacement, sports injury treatment, spine surgery, fracture care and comprehensive physical rehabilitation services.</p>
+        <div><span class="svc-tag">Joints</span><span class="svc-tag">Sports</span><span class="svc-tag">Spine</span></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-card-icon" style="background:#e0f2f1">💊</div>
+        <h3>General Medicine</h3>
+        <p>Primary care, preventive health screenings, chronic disease management, vaccinations and annual wellness checkups.</p>
+        <div><span class="svc-tag">Checkups</span><span class="svc-tag">Vaccines</span><span class="svc-tag">Chronic Care</span></div>
+      </div>
+    </div>
+
+    <div style="margin-top:60px;text-align:center">
+      <p class="sec-label">Pricing</p>
+      <h2 class="sec-title">Transparent Plans</h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="plan">Basic</div>
+        <div class="amount"><span>$</span>29</div>
+        <div class="period">per visit</div>
+        <ul class="price-features">
+          <li>General Consultation</li>
+          <li>Basic Lab Tests</li>
+          <li>Follow-up Call</li>
+          <li style="opacity:.4;text-decoration:line-through">Specialist Access</li>
+          <li style="opacity:.4;text-decoration:line-through">Priority Booking</li>
+        </ul>
+        <button class="btn btn-outline" style="width:100%" onclick="navigate('appointment')">Choose Basic</button>
+      </div>
+      <div class="price-card featured">
+        <div class="plan">Professional</div>
+        <div class="amount"><span>$</span>79</div>
+        <div class="period">per month</div>
+        <ul class="price-features">
+          <li>Unlimited Consultations</li>
+          <li>Full Lab Panel</li>
+          <li>Specialist Access</li>
+          <li>Priority Booking</li>
+          <li>Telemedicine Visits</li>
+        </ul>
+        <button class="btn" style="width:100%" onclick="navigate('appointment')">Choose Pro ⭐</button>
+      </div>
+      <div class="price-card">
+        <div class="plan">Family</div>
+        <div class="amount"><span>$</span>149</div>
+        <div class="period">per month</div>
+        <ul class="price-features">
+          <li>Up to 5 Members</li>
+          <li>All Pro Features</li>
+          <li>Dental Coverage</li>
+          <li>Home Visits</li>
+          <li>Dedicated Case Manager</li>
+        </ul>
+        <button class="btn btn-outline" style="width:100%" onclick="navigate('appointment')">Choose Family</button>
+      </div>
+    </div>
+
+  </div></div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     DOCTORS PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-doctors">
+  <div class="wrap"><div class="sec">
+
+    <div class="doctors-header">
+      <div>
+        <p class="sec-label">Our Team</p>
+        <h1>Meet Our Doctors</h1>
+        <p style="color:var(--muted);font-size:14px;margin-top:8px">50+ certified specialists ready to help you</p>
+      </div>
+      <div class="search-bar">
+        <input class="search-input" type="text" placeholder="Search by name..." id="doctorSearch" oninput="filterDoctors()">
+        <select class="filter-select" id="specFilter" onchange="filterDoctors()">
+          <option value="">All Specialties</option>
+          <option>Cardiologist</option>
+          <option>Neurologist</option>
+          <option>Dentist</option>
+          <option>Orthopedic</option>
+          <option>Eye Specialist</option>
+          <option>General Physician</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="doctors-grid" id="doctorsGrid">
+      <!-- Populated by JS -->
+    </div>
+
+  </div></div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     CONTACT PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="wrap"><div class="sec">
+    <p class="sec-label text-center">Get In Touch</p>
+    <h2 class="sec-title text-center" style="margin-bottom:36px">Contact Us</h2>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>We're Here<br>For You</h2>
+        <p>Reach out for appointments, medical inquiries, or any assistance. Our team is available 7 days a week.</p>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-text">
+            <strong>Address</strong>
+            <span>123 Healthcare Blvd, Medical City, MC 45678</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div class="contact-item-text">
+            <strong>Phone</strong>
+            <span>+1 (800) MED-CARE · +1 (800) 633-2273</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">✉️</div>
+          <div class="contact-item-text">
+            <strong>Email</strong>
+            <span>hello@medcare.com · support@medcare.com</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">🕐</div>
+          <div class="contact-item-text">
+            <strong>Hours</strong>
+            <span>Mon–Fri: 8am–10pm · Sat–Sun: 9am–6pm</span>
+          </div>
+        </div>
+        <div class="social-row">
+          <button class="social-btn" title="Facebook">📘</button>
+          <button class="social-btn" title="Twitter">🐦</button>
+          <button class="social-btn" title="Instagram">📸</button>
+          <button class="social-btn" title="YouTube">▶️</button>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <p>Fill in the form and we'll get back to you within 24 hours.</p>
+        <div class="form-success" id="contactSuccess">✅ Your message has been sent! We'll reply within 24 hours.</div>
+        <div class="form-row">
+          <div class="form-group"><label>First Name</label><input type="text" placeholder="John"></div>
+          <div class="form-group"><label>Last Name</label><input type="text" placeholder="Doe"></div>
+        </div>
+        <div class="form-group"><label>Email Address</label><input type="email" placeholder="john@example.com"></div>
+        <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+1 (555) 000-0000"></div>
+        <div class="form-group"><label>Subject</label>
+          <select><option>General Inquiry</option><option>Appointment</option><option>Medical Records</option><option>Billing</option><option>Feedback</option></select>
+        </div>
+        <div class="form-group"><label>Message</label><textarea placeholder="How can we help you today?"></textarea></div>
+        <button class="btn" style="width:100%" onclick="submitContact()">Send Message →</button>
+      </div>
+    </div>
+
+    <div class="map-box">
+      <div class="map-placeholder">
+        <div class="map-icon">🗺️</div>
+        <p style="font-size:16px;font-weight:700;margin-bottom:6px">123 Healthcare Blvd, Medical City</p>
+        <p>Interactive map — click to open in Google Maps</p>
+        <button class="btn btn-sm" style="margin-top:14px" onclick="window.open('https://maps.google.com','_blank')">Open in Maps</button>
+      </div>
+    </div>
+
+  </div></div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     APPOINTMENT PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-appointment">
+  <div class="wrap"><div class="sec">
+    <p class="sec-label text-center">Book Online</p>
+    <h2 class="sec-title text-center" style="margin-bottom:36px">Schedule Appointment</h2>
+
+    <div class="appt-wrap">
+      <div class="appt-info">
+        <h2>Easy Online Booking</h2>
+        <p>Book your appointment in minutes. Choose your doctor, date, and time — we'll confirm instantly.</p>
+        <div class="appt-steps">
+          <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Choose a Service</strong><span>Select from our 20+ specialties</span></div></div>
+          <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Pick a Doctor</strong><span>Browse profiles, ratings & availability</span></div></div>
+          <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Select Date & Time</strong><span>Real-time slot availability</span></div></div>
+          <div class="step"><div class="step-num">4</div><div class="step-text"><strong>Confirm & Relax</strong><span>Get instant SMS confirmation</span></div></div>
+        </div>
+        <div style="margin-top:30px;padding:20px;background:rgba(255,255,255,.18);border-radius:16px">
+          <p style="font-size:13px;font-weight:800;margin-bottom:6px">📞 Prefer to call?</p>
+          <p style="font-size:14px;opacity:.9">+1 (800) 633-2273<br>Available 24/7</p>
+        </div>
+      </div>
+
+      <div class="appt-form">
+        <h2>Book Your Visit</h2>
+        <p>Fill in your details to reserve your slot</p>
+        <div class="appt-success" id="apptSuccess">
+          <div class="check">✅</div>
+          <h3>Appointment Confirmed!</h3>
+          <p>You'll receive an SMS confirmation shortly. See you soon!</p>
+          <button class="btn btn-sm" style="margin-top:16px" onclick="resetAppt()">Book Another</button>
+        </div>
+        <div id="apptFormFields">
+          <div class="form-row">
+            <div class="form-group"><label>First Name</label><input type="text" id="apptFirst" placeholder="John"></div>
+            <div class="form-group"><label>Last Name</label><input type="text" id="apptLast" placeholder="Doe"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Phone</label><input type="tel" id="apptPhone" placeholder="+1 (555) 000-0000"></div>
+            <div class="form-group"><label>Email</label><input type="email" id="apptEmail" placeholder="john@example.com"></div>
+          </div>
+          <div class="form-group"><label>Select Specialty</label>
+            <select id="apptSpec">
+              <option value="">Choose specialty...</option>
+              <option>General Medicine</option><option>Cardiology</option><option>Dentistry</option>
+              <option>Neurology</option><option>Orthopedics</option><option>Eye Care</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Preferred Doctor</label>
+            <select id="apptDoc">
+              <option value="">Any available doctor</option>
+              <option>Dr. Mamman Bo – Cardiologist</option>
+              <option>Dr. Reda Slana – Neurologist</option>
+              <option>Dr. Yaroslav Hawa – Dentist</option>
+              <option>Dr. Sarah Kim – Orthopedic</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Preferred Date</label><input type="date" id="apptDate"></div>
+          <div class="form-group">
+            <label>Select Time Slot</label>
+            <div class="time-slots" id="timeSlots">
+              <div class="slot" onclick="selectSlot(this)">9:00 AM</div>
+              <div class="slot" onclick="selectSlot(this)">9:30 AM</div>
+              <div class="slot" onclick="selectSlot(this)">10:00 AM</div>
+              <div class="slot" onclick="selectSlot(this)">10:30 AM</div>
+              <div class="slot" onclick="selectSlot(this)">11:00 AM</div>
+              <div class="slot" onclick="selectSlot(this)">2:00 PM</div>
+              <div class="slot" onclick="selectSlot(this)">2:30 PM</div>
+              <div class="slot" onclick="selectSlot(this)">3:00 PM</div>
+              <div class="slot" onclick="selectSlot(this)">3:30 PM</div>
+              <div class="slot" onclick="selectSlot(this)">4:00 PM</div>
+              <div class="slot" onclick="selectSlot(this)">4:30 PM</div>
+              <div class="slot" onclick="selectSlot(this)">5:00 PM</div>
+            </div>
+          </div>
+          <div class="form-group"><label>Reason for Visit</label><textarea placeholder="Briefly describe your symptoms or reason for the appointment..."></textarea></div>
+          <button class="btn btn-green" style="width:100%;font-size:15px;padding:14px" onclick="submitAppt()">✅ Confirm Appointment</button>
+        </div>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<!-- ════════ FOOTER ════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span style="background:var(--blue);padding:6px 10px;border-radius:8px;font-size:16px">➕</span>
+          MedCare
+        </div>
+        <p>Providing compassionate, world-class healthcare since 2010. Your health is our mission.</p>
+        <div class="social-row">
+          <button class="social-btn">📘</button>
+          <button class="social-btn">🐦</button>
+          <button class="social-btn">📸</button>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a onclick="navigate('home')">Home</a></li>
+          <li><a onclick="navigate('about')">About Us</a></li>
+          <li><a onclick="navigate('services')">Services</a></li>
+          <li><a onclick="navigate('doctors')">Our Doctors</a></li>
+          <li><a onclick="navigate('contact')">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a onclick="navigate('services')">Dental Care</a></li>
+          <li><a onclick="navigate('services')">Cardiology</a></li>
+          <li><a onclick="navigate('services')">Eye Care</a></li>
+          <li><a onclick="navigate('services')">Neurology</a></li>
+          <li><a onclick="navigate('services')">Orthopedics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a>📍 123 Healthcare Blvd</a></li>
+          <li><a>📞 +1 (800) 633-2273</a></li>
+          <li><a>✉️ hello@medcare.com</a></li>
+          <li><a onclick="navigate('appointment')">📅 Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 MedCare. All rights reserved.</p>
+      <p>Privacy Policy · Terms of Service</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
