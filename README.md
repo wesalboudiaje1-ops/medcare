@@ -42,4 +42,4 @@ medcare/
 
 ## 📄 License
 
-MIT © 2025 MedCare
+MIT © 2026 MedCare
